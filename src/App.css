@@ -1,38 +1,113 @@
-.App {
-  
-  display: grid;
-  justify-content: center;
 
+h2,h1{
+  margin: 0;
 }
-.title{
-  
-}
-
-.recipe-container{
-  display: grid;
-  justify-content: center;
-  width: 500px;
-}
-.tags-section{
+.app {
+  padding: 10px 0px;
   display: flex;
-  flex-direction: row;
-  padding:15px;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color: #add8e6;
+  min-height: 800px;
 }
-.tag{
-  display: inline-block;
-  margin: 0 0.5rem 0.5rem 0;
-  padding: 0.5rem 0.6rem;
-  border-radius: 1rem;
-  background-color: #f0f0f0;
-  font-size: 1rem;
+.app-container{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0px 30px;
+    background-color: white;
+    gap: 20px;
+    max-width: 600px;
+  
+
+}
+
+.title {
+  font-size: 24px;
   font-weight: bold;
-  color: #333;
+  margin-bottom: 10px;
 }
-.input-field{
-  width: 100%;
-}
-.loading-box{
+
+.input-section {
   display: flex;
-  padding-top: 10px;
+  flex-direction: column;
+  align-items: center;
   
+  
+}
+
+.input-field {
+  width: 300px;
+  margin-bottom: 10px;
+  
+}
+
+.tags-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0px;
+  gap: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tag:hover {
+  background-color: #ffcccc;
+}
+
+.delete-indicator {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  font-size: 12px;
+  color: red;
+  opacity: 0;
+  font-weight: 800;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.tag:hover .delete-indicator {
+  opacity: 1;
+}
+
+.recipe-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.details-container{
+  display: flex;
+  justify-content: space-between;
+  } 
+
+.loading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.grid{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 300px auto;
+  gap: 20px;
+}
+.recipe-image{
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.prefernce-title{
+  padding: 20px 0px;
 }
